@@ -1,4 +1,4 @@
-class Plato(val nombre: String, val precio: Double, val tiempoPreparacion: Int, val ingredientes: MutableList<String> = mutableListOf()) {
+class Plato(var nombre: String, var precio: Double, var tiempoPreparacion: Int, val ingredientes: MutableList<String> = mutableListOf()) {
 
     init {
         require(nombre.isNotEmpty()) { "El nombre del plato no puede estar vacío." }
